@@ -1,17 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//only for index.js we need react dom to hook the elemnt whefre whole app is contained
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import ReactDOM from "react-dom";
+
+//whole react application is under div root in the index.hljs-template-variable
+
+import App from "./App"; //its the main componenet
+
+ReactDOM.render( < App / > , document.getElementById("root")); //1st param-comp we want to render-APP,2nd comp- elemnt we want to hook up to
